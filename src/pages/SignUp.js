@@ -6,7 +6,7 @@ import { Container, Alert, Button, FloatingLabel, Form } from "react-bootstrap";
 import GoogleLogin from "react-google-login";
 import config from "../config";
 import useAuth from "../auth/useAuth";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/makeitevent.png";
 
 export default function SignUp() {
   const navigate = useNavigate();
@@ -130,15 +130,15 @@ export default function SignUp() {
           noValidate
           autoComplete="off"
         >
-          <img alt="logo" src={Logo} className="w-25 mb-3" />
+          <img alt="logo" src={Logo} className="w-25 mb-4" />
           <h4>
-            Registrate gratis y <br /> ¡haz crecer tu negocio!
+            Descubre los eventos que tenemos para ti!!!
           </h4>
 
           <Form.Group>
             <FloatingLabel
               controlId="floatingInput1"
-              label="Ingresa tu username"
+              label="username"
               className="my-3"
             >
               <Form.Control
@@ -150,7 +150,7 @@ export default function SignUp() {
             </FloatingLabel>
             <FloatingLabel
               controlId="floatingInput2"
-              label="Ingresa tu correo"
+              label="email"
               className="my-3"
             >
               <Form.Control
@@ -162,7 +162,7 @@ export default function SignUp() {
             </FloatingLabel>
             <FloatingLabel
               controlId="floatingPassword1"
-              label="Ingresa tu contraseña"
+              label="password"
               className="my-3"
             >
               <Form.Control
@@ -174,7 +174,7 @@ export default function SignUp() {
             </FloatingLabel>
             <FloatingLabel
               controlId="floatingPassword2"
-              label="Repite tu contraseña "
+              label="repeat password "
               className="my-2"
             >
               <Form.Control
@@ -185,16 +185,16 @@ export default function SignUp() {
               />
             </FloatingLabel>
             <Button
-              variant="secondary"
+              variant="primary"
               type="submit"
-              className="btn btn-secondary w-75 my-3"
+              className="btn btn-primary w-75 my-3"
               id="button-login-form"
             >
               Regístrate
             </Button>
           </Form.Group>
         </Form>
-        <div className="justify-content-center text-center">
+        {/* <div className="justify-content-center text-center">
           <GoogleLogin
             clientId={config.GOOGLE_LOGIN}
             buttonText="Registrate con Google"
@@ -202,7 +202,7 @@ export default function SignUp() {
             onFailure={responseErrorGoogle}
             cookiePolicy={"single_host_origin"}
           />
-        </div>
+        </div> */}
       </div>
     </Container>
   );

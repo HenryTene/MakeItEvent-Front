@@ -12,7 +12,7 @@ export default function ButtonsFilters({ posts }) {
   return (
     <div>
       <div className="mb-3 mt-5">
-        <h3>Planifica tu evento ideal</h3>
+        <h3>MakeItEvent tu evento a un click </h3>
       </div>
 
       <Button
@@ -23,7 +23,7 @@ export default function ButtonsFilters({ posts }) {
         to={`/categories?category=Decoración`}
       >
         <img src={Deco} width="56" height="56" alt="deco" />
-        Decoración
+        Party decoration
       </Button>
       <Button
         variant="light"
@@ -33,7 +33,7 @@ export default function ButtonsFilters({ posts }) {
         to={`/categories?category=Florerias`}
       >
         <img src={Flores} width="56" height="56" alt="flores" />
-        Florerias
+       Flowers
       </Button>
       <Button
         variant="light"
@@ -53,7 +53,7 @@ export default function ButtonsFilters({ posts }) {
         to={`/categories?category=Fotografia`}
       >
         <img src={Foto} width="56" height="56" alt="flores" />
-        Fotografía
+        Photos
       </Button>
       <Button
         variant="light"
@@ -63,7 +63,7 @@ export default function ButtonsFilters({ posts }) {
         to={`/categories?category=Música`}
       >
         <img src={Musica} width="56" height="56" alt="flores" />
-        Música
+       Music
       </Button>
       <Button
         variant="light"

@@ -12,6 +12,7 @@ import {
 import useAuth from "../auth/useAuth";
 import { useParams, useNavigate } from "react-router-dom";
 import { getToken } from "../user/session";
+import { SocialIcon } from 'react-social-icons';
 
 export default function HeadBoard({ data }) {
   const { id } = useParams();
@@ -108,7 +109,7 @@ export default function HeadBoard({ data }) {
       </Col>
       <Col>
         <p>
-          <Button variant="light" href={url} target="_blank">
+          {/* <Button variant="light" href={url} target="_blank" size="10em">
             <AiOutlineWhatsApp />
           </Button>{" "}
           <Button variant="light" href={urlFb} target="_blank">
@@ -117,7 +118,19 @@ export default function HeadBoard({ data }) {
           {"  "}
           <Button variant="light" href={urlIg} target="_blank">
             <AiOutlineInstagram />
-          </Button>
+          </Button> */}
+          <SocialIcon network="whatsapp"  url={url} target="_blank"/>
+          {"  "}
+          <SocialIcon  network="facebook" url={urlFb} target="_blank"/>
+          {"  "}
+          <SocialIcon network="instagram"  url={urlIg} target="_blank"/>
+          {"  "}
+          <SocialIcon network="twitter"  url="https://twitter.com" target="_blank"/>
+          {"  "}
+          <SocialIcon network="telegram"  url="https://telegram.com" target="_blank"/>
+          {"  "}
+          <SocialIcon url="https://www.example.com" label="Our portfolio" target="_blank"/>
+          {"  "}
         </p>
       </Col>
       <hr className="my-4" />

@@ -111,7 +111,7 @@ export default function CreateCard({ posts, setDataPost }) {
           </Alert>
         )}
         <div className="mb-5">
-          <h2> Crea tu anuncio </h2>
+          <h2> Crear Evento </h2>
         </div>
 
         <Form
@@ -133,6 +133,7 @@ export default function CreateCard({ posts, setDataPost }) {
                   onChange={handlePhotoChange}
                   multiple
                   data-test-id="photos-post-form"
+                  
                 />
               </Form.Group>
             </Col>
@@ -143,7 +144,7 @@ export default function CreateCard({ posts, setDataPost }) {
                 <>
                   <Image
                     className="mx-1 mb-3"
-                    width={300}
+                    width={200}
                     draggable={"false"}
                     src={profileIcon}
                     alt="UploadImage"
@@ -168,11 +169,11 @@ export default function CreateCard({ posts, setDataPost }) {
 
           <Form.Group as={Row} className="mb-3">
             <Form.Label column sm="3">
-              Empresa:
+              Evento:
             </Form.Label>
             <Col sm="9">
               <Form.Control
-                placeholder="Ejm: Rustic Art Decoraciones"
+                placeholder="Nombre de Evento"
                 type="text"
                 name="company"
                 onChange={handleInputChange}
@@ -258,11 +259,11 @@ export default function CreateCard({ posts, setDataPost }) {
           </Form.Group>
           <Form.Group as={Row} className="mb-3">
             <Form.Label column sm="3">
-              Precio desde:
+              Precio:
             </Form.Label>
             <Col sm="9">
               <Form.Control
-                placeholder="Ejm: S/ 700"
+                placeholder=".S/.00"
                 type="text"
                 name="rate"
                 onChange={handleInputChange}
@@ -278,7 +279,7 @@ export default function CreateCard({ posts, setDataPost }) {
             </Form.Label>
             <Col sm="9">
               <Form.Control
-                placeholder=""
+                placeholder="Ejemplo: https://www.facebook.com/evento"
                 type="text"
                 name="facebook"
                 onChange={handleInputChange}
@@ -293,7 +294,7 @@ export default function CreateCard({ posts, setDataPost }) {
             </Form.Label>
             <Col sm="9">
               <Form.Control
-                placeholder=""
+                placeholder="Ejemplo: https://www.instagram.com/evento"
                 type="text"
                 name="instagram"
                 onChange={handleInputChange}
@@ -312,6 +313,7 @@ export default function CreateCard({ posts, setDataPost }) {
                 rows={3}
                 type="text"
                 name="description"
+                placeholder="Descripción"
                 onChange={handleInputChange}
                 value={formValues.description}
                 data-test-id="description-post-form"
@@ -321,12 +323,12 @@ export default function CreateCard({ posts, setDataPost }) {
 
           <Form.Group as={Row} className="justify-content-center">
             <Button
-              className="mt-5 w-50 "
-              variant="secondary"
+              className="mt-5 w-10"
+              variant="primary"
               type="submit"
               id="button-login-form"
             >
-              Crear Anuncio
+              Crear Evento
             </Button>
           </Form.Group>
         </Form>

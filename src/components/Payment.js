@@ -43,12 +43,12 @@ function Payment({ idPost, published }) {
     <Container>
       <Form action={action} method="POST">
         <Button
-          variant="secondary"
-          className="mt-2"
+          variant="primary"
+          className="mt-2 w-100"
           type="submit"
           disabled={published === 1}
         >
-          Publicitar
+          Anunciar
         </Button>
       </Form>
     </Container>

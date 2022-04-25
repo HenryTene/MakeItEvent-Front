@@ -85,7 +85,7 @@ export default function CheckoutForm({ dataId }) {
         <CardElement id="card-element" />
       </div>
 
-      <button disabled={!stripe} className="btn btn-secondary">
+      <button disabled={!stripe} className="btn btn-primary">
         {loading ? (
           <div className="spinner-border text-light" role="status">
             <span className="sr-only">Loading...</span>

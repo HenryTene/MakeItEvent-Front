@@ -24,8 +24,8 @@ export default function Banner({
           {category} <br />
           <strong>Desde: </strong>S/ {rate}
         </Card.Text>
-        <Button as={Link} to={`/post/${id}`} variant="secondary">
-          Contactar
+        <Button as={Link} to={`/post/${id}`} variant="primary">
+          Mas información
         </Button>
       </Card.Body>
       <Card.Footer className="text-muted">

@@ -201,7 +201,7 @@ export default function ProfileUser() {
                   </Col>
                 </Form.Group>
                 <Button
-                  className="btn btn-dark mb-6"
+                  className="btn btn-primary mb-6"
                   variant="primary"
                   type="submit"
                   id="profileupdate-button"

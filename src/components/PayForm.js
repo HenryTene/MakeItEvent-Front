@@ -7,6 +7,7 @@ import CheckoutForm from "./CheckoutForm";
 
 const stripePromise = loadStripe(
   "pk_test_51KWZiGCPhQu9FAfUNytrY6o5ldVKlbTY8lDEPjHnE1prLlwrgv4HxM3XADK8yfxOyHjhO0P9GhVvxQZXpcg04Hwt00cVi6shuK"
+  
 );
 
 function PayForm({ dataPostId }) {

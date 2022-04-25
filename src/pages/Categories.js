@@ -4,6 +4,7 @@ import { Form, Row, Container } from "react-bootstrap";
 import CategoryCard from "../components/CategoryCard";
 import { FaLaptopHouse } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { Button } from "bootstrap";
 
 export default function Categories({ posts, setPosts }) {
   const [queryParams, setQueryParams] = useState({
@@ -80,7 +81,7 @@ export default function Categories({ posts, setPosts }) {
     >
       <Row sm={2} className="row d-flex justify-content-center py-4">
         <h2 className="p-2">
-          Encuentra los mejores profesionales para tu evento
+          {/* Encuentra los mejores profesionales para tu evento */}
         </h2>
       </Row>
       <div className="container-fluid mx-2">
@@ -91,7 +92,7 @@ export default function Categories({ posts, setPosts }) {
               size="lg"
               name="company"
               type="text"
-              placeholder="Buscar por empresa"
+              placeholder="Busca tu evento"
               onChange={handleShallowSearch}
               value={shallowSearch}
             />
@@ -156,7 +157,7 @@ export default function Categories({ posts, setPosts }) {
             </Form.Select>
             <div className="mt-5 mb-4">
               <Link to="/signup">
-                <FaLaptopHouse /> Agrega tu empresa a nuestros proveedores
+                <FaLaptopHouse /> Agrega tu evento!!!
               </Link>
             </div>
           </div>
@@ -180,7 +181,7 @@ export default function Categories({ posts, setPosts }) {
                 )}
               </Row>
             ) : (
-              <div>No se encontraron resultados</div>
+              <div>Aun no hay este tipo de Eventos</div>
             )}
           </div>
         </div>

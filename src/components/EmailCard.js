@@ -74,7 +74,7 @@ export default function EmailCard({ data }) {
           autoComplete="off"
           className="justify-content-center text-center"
         >
-          <h4>Solicitar Cotización</h4>
+          <h4>Contáctanos</h4>
 
           <Form.Group>
             <FloatingLabel
@@ -128,12 +128,12 @@ export default function EmailCard({ data }) {
               />
             </FloatingLabel>
             <Button
-              variant="secondary"
+              variant="primary"
               type="submit"
               className="my-2 v-100"
               id="button-login-form"
             >
-              Enviar Solicitud
+              Enviar
             </Button>
           </Form.Group>
         </form>

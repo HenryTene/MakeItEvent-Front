@@ -42,7 +42,7 @@ export default function BannersGallery() {
     <>
       <Row className="row d-flex justify-content-center py-5 ">
         <div className="mb-3">
-          <h3>Planifica tu evento ideal</h3>
+          <h3>MakeItEvent tu evento a un click</h3>
         </div>
         {banners.length ? (
           <Row

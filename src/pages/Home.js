@@ -8,12 +8,12 @@ import ButtonsFilters from "../components/ButtonsFilters";
 export default function Home({ posts, setPosts }) {
   return (
     <Container className="text-center" fluid>
-      <Row>
-        <Hero />
-      </Row>
       <ButtonsFilters posts={posts} setPosts={setPosts} />
       <CarouselHome />
       <About />
+    {/*   <Row>
+        <Hero />
+      </Row> */}
     </Container>
   );
 }

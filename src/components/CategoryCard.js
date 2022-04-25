@@ -47,7 +47,7 @@ export default function CategoryCard({
           </Card.Text>
         </Card.Body>
         <Card.Footer className="text-muted">
-          <Button as={Link} to={`/post/${id}`} variant="secondary">
+          <Button variant="primary" as={Link} to={`/post/${id}`} >
             Contactar
           </Button>
         </Card.Footer>

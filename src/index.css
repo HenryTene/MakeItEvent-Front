@@ -4,7 +4,7 @@
 { box-sizing: border-box;}
 
 body 
- { background: #f1e4d1 !important;
+ { background: #f1f1f1!important;
   min-height: 100vh;
   display: flex;
   font-weight: 400;
@@ -48,7 +48,7 @@ body, html, .App, #root, .auth-wrapper
 
 
 .auth-wrapper .form-control:focus 
- { border-color: #FAD4AE;
+ { border-color: #FAD4AE ;
   box-shadow: none;
 }
 
@@ -74,7 +74,8 @@ body, html, .App, #root, .auth-wrapper
 }
 
 .btncat:hover {
-  background-color: #eeca94; 
+  
+  background-color: #0B5ED7; 
   color: white;
 }
 #payment-form {

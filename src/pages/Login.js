@@ -9,7 +9,7 @@ import {
   Form,
 } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/makeitevent.png";
 import useAuth from "../auth/useAuth";
 import { setSession, setToken } from "../user/session";
 import GoogleLogin from "react-google-login";
@@ -126,7 +126,7 @@ export default function Login() {
           <Form.Group>
             <FloatingLabel
               controlId="floatingInput"
-              label="Escribe tu usuario"
+              label="username"
               className="my-3"
             >
               <Form.Control
@@ -141,7 +141,7 @@ export default function Login() {
           <Form.Group>
             <FloatingLabel
               controlId="floatingPassword"
-              label="Escribe tu contraseña"
+              label="password"
             >
               <Form.Control
                 type="password"
@@ -162,7 +162,7 @@ export default function Login() {
             <br />
           </div>
           <Button
-            variant="secondary"
+            variant="primary"
             type="submit"
             className="my-4"
             size="lg"
@@ -171,15 +171,15 @@ export default function Login() {
             Iniciar sesión
           </Button>
         </Form>
-        <div className="mb-3 d-flex justify-content-center">
+       {/*  <div className="mb-3 d-flex justify-content-center">
           <GoogleLogin
             clientId={config.GOOGLE_LOGIN}
-            buttonText="Inicia Sesión con Google"
+            buttonText="Inicia con Google"
             onSuccess={responseGoogle}
             onFailure={responseErrorGoogle}
             cookiePolicy={"single_host_origin"}
           />
-        </div>
+        </div> */}
         <Form.Group
           className="mb-3 d-flex justify-content-center"
           id="formGridCheckbox"

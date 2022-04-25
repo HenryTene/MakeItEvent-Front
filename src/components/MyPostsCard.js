@@ -23,6 +23,7 @@ export default function MyPostsCard({
           backgroundClip: "border-box",
           border: "1px solid rgba(0,0,0,.125)",
           borderRadius: "0.25rem",
+          shadow: "0 20px 40px rgba(0,0,0,0.4)"
         }}
       >
         <Card.Img
@@ -30,6 +31,7 @@ export default function MyPostsCard({
             minWidth: "50%",
             height: "130px",
             objectFit: "cover",
+
           }}
           variant="top"
           src={photos[0]}
@@ -48,8 +50,9 @@ export default function MyPostsCard({
           <Button
             as={Link}
             to={`/post/${id}`}
-            variant="secondary"
+            variant="outline-primary"
             id="see-post"
+            className="mt-2 w-100"
           >
             Ver
           </Button>

@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Nav, Navbar, Button, Dropdown } from "react-bootstrap";
-import leventLogo from "../assets/L'EVENT - PNG.png";
+//import leventLogo from "../assets/L'EVENT - PNG.png";
+import leventLogo from "../assets/makeitevent.png";
 import useAuth from "../auth/useAuth";
 import { BsPersonCircle } from "react-icons/bs";
 
@@ -30,7 +31,10 @@ export default function NavBar() {
                 Inicio
               </Nav.Link>
               <Nav.Link as={Link} to="/categories">
-                Proveedores
+                Tus Eventos
+              </Nav.Link>
+              <Nav.Link >
+               Nosotros
               </Nav.Link>
               {userLogin?.username ? (
                 <>
@@ -70,18 +74,18 @@ export default function NavBar() {
                   </Dropdown>
                   <Button
                     className="mx-2"
-                    variant="secondary"
+                    variant="primary"
                     as={Link}
                     to="/create"
                   >
-                    Crear Anuncio
+                    Crear Evento
                   </Button>
                 </>
               ) : (
                 <div>
                   <Button
                     className="mx-2"
-                    variant="secondary"
+                    variant="primary"
                     as={Link}
                     to="/login"
                   >
@@ -89,7 +93,7 @@ export default function NavBar() {
                   </Button>
                   <Button
                     className="mx-2"
-                    variant="light"
+                    variant="dark"
                     as={Link}
                     to="/signup"
                   >

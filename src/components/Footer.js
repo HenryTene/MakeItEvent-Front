@@ -5,11 +5,11 @@ export default function Footer() {
   const links = [
     { showName: "Inicio", link: "/" },
     { showName: "Acerca de", link: "/#about" },
-    { showName: "Proveedores", link: "/categories" },
+    /* { showName: "Proveedores", link: "/categories" }, */
     { showName: "Iniciar Sesion", link: "/login" },
   ];
   return (
-    <Row className="mt-auto bg-light text-center text-black-50 py-4 mx-0">
+    <Row className="mt-auto bg-dark text-center text-light py-4 mx-0">
       <Container>
         <Row>
           {links.map((navLink) => {
@@ -17,7 +17,7 @@ export default function Footer() {
               <Col key={navLink.showName} xs={12} sm={3}>
                 <Button
                   variant="link"
-                  className="text-black-50 text-decoration-none"
+                  className="text-light text-decoration-none"
                   as={Link}
                   to={`${navLink.link}`}
                 >
@@ -28,7 +28,7 @@ export default function Footer() {
           })}
         </Row>
         <Row className="pt-5">
-          <Col xs={12}>© 2022 L'event</Col>
+          <Col xs={12}>© 2022 MakeItevent</Col>
         </Row>
       </Container>
     </Row>
